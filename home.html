@@ -23,8 +23,8 @@
 		<h4>Question 1</h4>
 		<div id="playerContainer" class="outer">
 			<video-js
-				id="myPlayerID"
-				data-video-id="6113876611001"
+				id="mutedPlayerID"
+				data-video-id="6113960851001"
 				data-account="1752604059001"
 				data-player="jTJeuENbv"
 				data-embed="default"
@@ -32,38 +32,48 @@
 				class="video-js"
 				controls
 				playsinline
+				muted
 			></video-js>
+			<button id="unmuteButton"></button>
+			<script>
+				unmuteButton.addEventListener('click', function() {
+					video - js.muted = false;
+				});
+			</script>
 		</div>
 		<br />
 		<hr />
 		<br />
 		<!-- <div style="position: relative; display: block; max-width: 960px;"> -->
 		<h4>Question 3 - part A</h4>
-		<div id="playerContainer" class="outer">
-			<h4>Question 3 - part a</h4>
-			<!-- <div style="padding-top: 56.25%;"> -->
-			<div class="adEmbed">
+		<div style="position: relative; display: block; max-width: 960px;">
+			<div style="padding-top: 56.25%;">
 				<iframe
-					src="https://players.brightcove.net/5859021222001/jTJeuENbv_default/index.html"
+					src="https://players.brightcove.net/5859021222001/jTJeuENbv_default/index.html?videoId=6113960851001"
 					allowfullscreen=""
 					allow="encrypted-media"
-					align="center"
+					style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"
+					muted
 				></iframe>
 			</div>
 		</div>
+
 		<!-- <div style="position: relative; display: block; max-width: 960px;"> -->
 		<h4>Question 3 - part B</h4>
-		<div id="playerContainer" class="outer">
-			<!-- <div style="padding-top: 56.25%;"> -->
-			<div class="adEmbed">
-				<iframe
-					src="https://players.brightcove.net/5859021222001/jTJeuENbv_default/index.html"
-					allowfullscreen=""
-					allow="encrypted-media"
-					align="center"
-				></iframe>
-			</div>
+		<div style="max-width: 960px;">
+			<video-js
+				data-account="5859021222001"
+				data-player="jTJeuENbv"
+				data-embed="default"
+				controls=""
+				data-video-id="6113960851001"
+				data-playlist-id=""
+				data-application-id=""
+				class="vjs-fluid"
+				muted
+			></video-js>
 		</div>
+		<script src="https://players.brightcove.net/5859021222001/jTJeuENbv_default/index.min.js"></script>
 		<br />
 		<hr />
 		<br />
@@ -125,6 +135,7 @@
 					controls
 					width="560"
 					height="315"
+					muted
 				></video-js>
 
 				<!-- close player button -->

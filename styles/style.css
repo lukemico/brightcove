@@ -19,9 +19,6 @@ h1 {
 	display: block;
 	width: 610px;
 	height: 344px;
-	/* left: 50%; */
-	/* top: 50%; */
-	/* transform: translate(-50%, -50%); */
 	position: relative;
 	margin: 0 auto;
 	padding: 0 50px 50px 50px;
@@ -41,20 +38,14 @@ h1 {
 	margin: auto;
 }
 
-/*
-Question 6 - Enlarge Player on Mouseover
- */
+/* Question 6 - Enlarge Player on Mouseover */
+
 /* Initial styles for the player wrapper */
 #playerWrapper {
 	width: 272px;
 	height: 153px;
 	transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
 }
-
-
-
-
-
 
 /* Question 7 - Lightbox */
 

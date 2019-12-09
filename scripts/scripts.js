@@ -1,4 +1,5 @@
-var myPlayer = videojs.getPlayer('myPlayerID'),
+// question 1 - part A
+var myPlayer = videojs.getPlayer('mutedPlayerID'),
 	volumeLevel = 0.7;
 
 // +++ Wait for loadedmetadata then try to play video +++
@@ -32,7 +33,7 @@ myPlayer.on('loadedmetadata', function() {
 				});
 
 				// +++ Configure the button +++
-				button.textContent = 'Unmute';
+				button.textContent = 'Unmute Sound';
 				button.classList.add('inner');
 				button.setAttribute(
 					'style',
